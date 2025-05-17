@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Typography, TextField, Button } from '@mui/material';
  
- export const Signup = () => {
+ export const Signin = () => {
    return (
     <div>
         <div style={{
@@ -11,7 +11,7 @@ import { Card, Typography, TextField, Button } from '@mui/material';
             justifyContent: "center"
         }}>
             <Typography variant={'h6'}>
-            Welcome to Coursera. Sign up below
+            Welcome Back, Sign in below
             </Typography>
         </div>
 
@@ -21,11 +21,10 @@ import { Card, Typography, TextField, Button } from '@mui/material';
         <br/><br/>
         <TextField id="outlined-basic" label="Password" variant="outlined" type='password' fullWidth/>
         <br/><br/>
-        <Button size='large' variant="contained"> Signup  </Button>
+        <Button size='large' variant="contained"> Signin  </Button>
      </Card>
      </div>
     
      </div>
    )
  }
- 

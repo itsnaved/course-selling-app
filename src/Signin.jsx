@@ -19,7 +19,7 @@ import { Card, Typography, TextField, Button } from '@mui/material';
      <Card variant="outlined"style={{width: 400, padding: 20  }}>
         <TextField id="outlined-basic" label="Email" variant="outlined"  fullWidth/>
         <br/><br/>
-        <TextField id="outlined-basic" label="Password" variant="outlined" type='password' fullWidth/>
+        <TextField id="outlined-basic1" label="Password" variant="outlined" type='password' fullWidth/>
         <br/><br/>
         <Button size='large' variant="contained"> Signin  </Button>
      </Card>

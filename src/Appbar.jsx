@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typography, Button } from '@mui/material';
 
 export const Appbar = () => {
@@ -13,8 +12,8 @@ export const Appbar = () => {
         <Typography variant='h6'>Coursera</Typography>
         </div>
         <div style={{display:"flex"}}>
-        <Button variant='contained' style={{marginRight:10}}> Signup </Button>
-        <Button variant='contained'> Signin </Button>
+        <Button variant='contained' style={{marginRight:10}} onClick={()=>{window.location= "/signup"}}> Signup </Button>
+        <Button variant='contained' onClick={()=>{window.location= "/signin"}}> Signin </Button>
         </div>
     </div>
   )

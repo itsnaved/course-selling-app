@@ -4,6 +4,7 @@ import { useState } from "react"
 export const AddCourse = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage]= useState("")
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <Card variant="outlined" style={{ width: 400, padding: 20 }}>
@@ -24,6 +25,15 @@ export const AddCourse = () => {
           }}
         />
 
+        <TextField
+          label="Image link"
+          variant="outlined"
+          fullWidth
+          onChange={(e) => {
+            setImage(e.target.value);
+          }}
+        />
+
         <Button
           size='large'
           variant="contained"
@@ -37,7 +47,7 @@ export const AddCourse = () => {
               body: JSON.stringify({
                 title: title,
                 description: description,
-                imageLink: "",
+                imageLink: image,
                 published: true
               }),
             }).then((res) => {

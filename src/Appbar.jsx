@@ -29,8 +29,8 @@ export const Appbar = () => {
           </div>
       </div>
     </div>
-    }
-  return (
+    }else{
+      return (
     <div
       style={{
         display: "flex",
@@ -49,4 +49,5 @@ export const Appbar = () => {
       </div>
     </div>
   )
+    }
 }

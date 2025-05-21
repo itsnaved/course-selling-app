@@ -1,24 +1,68 @@
-# Logs
+# ============================
+# GENERAL
+# ============================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================
+# LOG FILES
+# ============================
 logs
 *.log
+log*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ============================
+# NODE MODULES
+# ============================
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# ============================
+# DIST / BUILD OUTPUT
+# ============================
+dist/
+dist-ssr/
+build/
+coverage/
+
+# ============================
+# ENVIRONMENT VARIABLES
+# ============================
+.env
+.env.*.local
+
+# ============================
+# OS + EDITOR SPECIFIC
+# ============================
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.tmp
+
+# ============================
+# BACKEND SPECIFIC
+# ============================
+pids/
+*.pid
+*.seed
+
+# ============================
+# FRONTEND (VITE) SPECIFIC
+# ============================
+*.local
+
+# Backend ignores
+server/node_modules/
+server/.env
+server/logs/
+server/coverage/
